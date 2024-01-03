@@ -1,0 +1,79 @@
+.news-card {
+    height: 380px;
+    width: 380px;
+    flex-basis: 20%; 
+    margin: 6px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content:left; /* Căn giữa các tin tức theo chiều ngang */
+    align-items:center; /* Căn giữa các tin tức theo chiều dọc */
+  }
+  
+.news-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px
+}
+
+.news-item-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09); 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.news-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    margin-bottom: 1px; /* Giảm khoảng cách dưới của tiêu đề tin tức */
+    color: #171717;
+    text-align: left;
+
+}
+
+.news-item-image-container {
+    width: 100%;
+    max-width: 300px;
+    margin-top: auto;
+  
+}
+
+.news-item-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.news-item.zoomed .news-item-image {
+    transform: scale(1.4);
+}
+.news-item-description{
+    font-size: 13px;
+    font-weight: 100;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3f3f3f; 
+    text-align: left;
+}
+.news-item-time {
+    text-align: right;
+    font-size: 12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3f3f3f; 
+  }
